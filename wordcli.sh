@@ -84,6 +84,7 @@ while [[ 1 == 1 ]]; do
 		echo "Wordpress is now installed on: $WORDPRESS_INSTALLATION_FOLDER"
 		echo
 		continue
+	# Create wordpress project
 	elif [[ $user_option -eq 2 ]]; then
 		clear
 		if [[ ! -d $WORDPRESS_INSTALLATION_FOLDER ]]; then
@@ -111,7 +112,7 @@ while [[ 1 == 1 ]]; do
 		echo "Location: $project_path"
 		echo
 		continue
-
+	# Start XAMPP services
 	elif [[ $user_option -eq 3 ]]; then
 		clear
 
@@ -129,6 +130,7 @@ while [[ 1 == 1 ]]; do
 		echo
 		sudo $XAMPP_EXECUTABLE status
 		echo
+	# Exit
 	elif [[ user_option -eq 4 ]]; then
 		exit
 	fi
